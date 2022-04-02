@@ -13,6 +13,7 @@
     --secondary-text-color: #757575;
     --hover-focus-color: #2196F3;
     --white-text-color: #ffffff;
+    --card-gap: 30px;
 }
 
 body {
@@ -21,15 +22,33 @@ body {
     color: var(--primary-text-color);
 }
 
+.container {
+    padding: 0px 15px;
+    margin: 0px auto;
+    width: 1200px;
+    /* margin-bottom: 94px; */
+}
+
 .list {
     list-style: none;
     margin-top: 0;
     margin-bottom: 0;
 }
 
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
 /* Первая страница */
 
 /* Верхняя линия */
+
+.header {
+    margin: 32px auto;
+}
 
 .logo {
     font-family: 'Raleway';
@@ -75,6 +94,8 @@ body {
 
 .hero {
     background-color: #2F303A;
+    padding: 200px 0px;
+    margin-top: 32px;
 }
 
 .hero-title {
@@ -86,7 +107,7 @@ body {
     text-transform: uppercase;
 
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 30px;
 
     color: var(--white-text-color);
 }
@@ -109,11 +130,21 @@ body {
 
 /* Особенности */
 
+.specials {
+    margin-top: 94px;
+}
+
 .hiden-title {
-
-
-    margin-top: 0;
-    margin-bottom: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .benefits-title {
@@ -123,8 +154,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 
 
@@ -136,10 +166,13 @@ body {
     color: var(--secondary-text-color);
 
     margin-top: 0;
-    margin-bottom: 0;
 }
 
 /* Чем мы занимаемся */
+
+.actions {
+    margin-top: 94px;
+}
 
 .secondary-title {
     font-weight: 700;
@@ -152,10 +185,30 @@ body {
     margin-bottom: 0;
 }
 
+.actions-title {
+    margin-bottom: 50px;
+}
+
 /* Наша команда */
 
 .team {
     background-color: #F5F4FA;
+    margin-top: 94px;
+    margin-bottom: 0px;
+    padding-bottom: 94px;
+}
+
+.team-title {
+    padding-top: 94px;
+    margin-bottom: 50px;
+}
+
+.teammate-card {
+
+    background: var(--white-text-color);
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .teammate {
@@ -165,8 +218,8 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
 
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .profession {
@@ -179,7 +232,7 @@ body {
     color: var(--secondary-text-color);
 
     margin-top: 0;
-    margin-bottom: 0;
+    padding-bottom: 30px;
 }
 
 /* вторая страница */
@@ -241,6 +294,7 @@ body {
 /* Подвал */
 
 footer {
+    padding-top: 60px;
     background-color: #2F303A;
 }
 
@@ -273,10 +327,5 @@ footer {
 
     font-style: normal;
     text-decoration: none;
-    color: var(--white-text-color);
-}
-
-.footer-mail,
-.footer-tel {
     color: rgba(255, 255, 255, .6);
 }
