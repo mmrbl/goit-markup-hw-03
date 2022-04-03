@@ -18,7 +18,7 @@
 <body>
     <!-- Верхняя линия -->
     <header>
-        <div class="container">
+        <div class="container header">
             <nav>
                 <a class="logo hover-color" href="./index.html"><span class="blue-text">Web</span>Studio</a>
 
@@ -45,65 +45,88 @@
         <!-- фильтры -->
         <section class="examples">
             <div class="container">
-                <h1 class="hiden-title">Фильтр примеров работ</h1>
-                <ul class="list">
-                    <li> <button class="filter-button" type="button">Все</button>
-                    <li> <button class="filter-button" type="button">Веб-сайты</button>
-                    <li> <button class="filter-button" type="button">Приложения</button>
-                    <li> <button class="filter-button" type="button">Дизайн</button>
-                    <li> <button class="filter-button" type="button">Маркетинг</button>
-                </ul>
+                <div class="filter-buttons">
+                    <h1 class="hiden-title">Фильтр примеров работ</h1>
+                    <ul class="list">
+                        <li> <button class="filter-button" type="button">Все</button>
+                        <li> <button class="filter-button" type="button">Веб-сайты</button>
+                        <li> <button class="filter-button" type="button">Приложения</button>
+                        <li> <button class="filter-button" type="button">Дизайн</button>
+                        <li> <button class="filter-button" type="button">Маркетинг</button>
+                    </ul>
+                </div>
 
                 <!-- примеры -->
                 <h1 class="hiden-title">Примеры работ</h1>
                 <ul class="examples-list list">
-                    <li>
-                        <img src="./images/example1.jpg" width="370"
+                    <li class="example-card">
+                        <img class="example-photo" src="./images/example1.jpg" width="370"
                             alt="Ноутбук с изображенеим лавной страницы сайта Технокряк">
-                        <h2 class="example-title">Технокряк</h2>
-                        <p class="project-type">Веб-сайт</p>
+                        <div class="example-info">
+                            <h2 class="example-title">Технокряк</h2>
+                            <p class="project-type">Веб-сайт</p>
+                        </div>
                     </li>
-                    <li>
-                        <img src="./images/example2.jpg" width="370" alt="Постер New Orlean vs Golden Star">
-                        <h2 class="example-title">Постер New Orlean vs Golden Star</h2>
-                        <p class="project-type">Дизайн</p>
+                    <li class="example-card">
+                        <img class="example-photo" src="./images/example2.jpg" width="370"
+                            alt="Постер New Orlean vs Golden Star">
+                        <div class="example-info">
+                            <h2 class="example-title">Постер New Orlean vs Golden Star</h2>
+                            <p class="project-type">Дизайн</p>
+                        </div>
                     </li>
-                    <li>
-                        <img src="./images/example3.jpg" width="370" alt="Логотип ресторана Seafood">
-                        <h2 class="example-title">Ресторан Seafood</h2>
-                        <p class="project-type">Приложение</p>
+                    <li class="example-card">
+                        <img class="example-photo" src="./images/example3.jpg" width="370"
+                            alt="Логотип ресторана Seafood">
+                        <div class="example-info">
+                            <h2 class="example-title">Ресторан Seafood</h2>
+                            <p class="project-type">Приложение</p>
+                        </div>
                     </li>
-                    <li>
-                        <img src="./images/example4.jpg" width="370" alt="Наушники">
-                        <h2 class="example-title">Проект Prime</h2>
-                        <p class="project-type">Маркетинг</p>
+                    <li class="example-card">
+                        <img class="example-photo" src="./images/example4.jpg" width="370" alt="Наушники">
+                        <div class="example-info">
+                            <h2 class="example-title">Проект Prime</h2>
+                            <p class="project-type">Маркетинг</p>
+                        </div>
                     </li>
-                    <li>
-                        <img src="./images/example5.jpg" width="370" alt="Белая и оранжевая коробки">
-                        <h2 class="example-title">Проект Boxes</h2>
-                        <p class="project-type">Приложение</p>
+                    <li class="example-card">
+                        <img class="example-photo" src="./images/example5.jpg" width="370"
+                            alt="Белая и оранжевая коробки">
+                        <div class="example-info">
+                            <h2 class="example-title">Проект Boxes</h2>
+                            <p class="project-type">Приложение</p>
+                        </div>
                     </li>
-                    <li>
-                        <img src="./images/example6.jpg" width="370"
+                    <li class="example-card">
+                        <img class="example-photo" src="./images/example6.jpg" width="370"
                             alt="Моноблок с изображением главной страницы сайта Inspiration has no Borders">
-                        <h2 class="example-title">Inspiration has no Borders</h2>
-                        <p class="project-type">Веб-сайт</p>
+                        <div class="example-info">
+                            <h2 class="example-title">Inspiration has no Borders</h2>
+                            <p class="project-type">Веб-сайт</p>
+                        </div>
                     </li>
-                    <li>
-                        <img src="./images/example7.jpg" width="370" alt="Журнал Limited Edition">
-                        <h2 class="example-title">Издание Limited Edition</h2>
-                        <p class="project-type">Дизайн</p>
+                    <li class="example-card">
+                        <img class="example-photo" src="./images/example7.jpg" width="370" alt="Журнал Limited Edition">
+                        <div class="example-info">
+                            <h2 class="example-title">Издание Limited Edition</h2>
+                            <p class="project-type">Дизайн</p>
+                        </div>
                     </li>
-                    <li>
-                        <img src="./images/example8.jpg" width="370" alt="Бирка Lab el tag">
-                        <h2 class="example-title">Проект LAB</h2>
-                        <p class="project-type">Маркетинг</p>
+                    <li class="example-card">
+                        <img class="example-photo" src="./images/example8.jpg" width="370" alt="Бирка Lab el tag">
+                        <div class="example-info">
+                            <h2 class="example-title">Проект LAB</h2>
+                            <p class="project-type">Маркетинг</p>
+                        </div>
                     </li>
-                    <li>
-                        <img src="./images/example9.jpg" width="370"
+                    <li class="example-card">
+                        <img class="example-photo" src="./images/example9.jpg" width="370"
                             alt="ноутбук с изображением главной страницы сайта Growing Business">
-                        <h2 class="example-title">Growing Business</h2>
-                        <p class="project-type">Приложение</p>
+                        <div class="example-info">
+                            <h2 class="example-title">Growing Business</h2>
+                            <p class="project-type">Приложение</p>
+                        </div>
                     </li>
                 </ul>
             </div>
