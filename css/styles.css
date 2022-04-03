@@ -28,7 +28,7 @@ body {
     width: 1200px;
 
 
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
 }
 
 .list {
@@ -50,7 +50,7 @@ p {
 /* Верхняя линия */
 
 .header {
-    margin: 32px auto;
+    padding-bottom: 32px;
 }
 
 .logo {
@@ -98,7 +98,7 @@ p {
 .hero {
     background-color: #2F303A;
     padding: 200px 0px;
-    margin-top: 32px;
+    /* margin-top: 32px; */
 
     text-align: center;
 }
@@ -252,6 +252,10 @@ p {
 
 /* Фильтры */
 
+.filter-buttons {
+    margin-bottom: 94px;
+}
+
 .filter-button {
     font-weight: 500;
     font-size: 16px;
@@ -277,6 +281,25 @@ p {
 
 /* Примеры */
 
+.examples {
+    margin: 94px 0;
+}
+
+.example-card {
+    width: 370px;
+
+    background: var(--white-text-color);
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+
+    margin-bottom: 30px;
+}
+
+.example-info {
+    text-align: center;
+    margin: 20px auto;
+}
+
 .example-title {
     font-weight: 700;
     font-size: 18px;
@@ -284,7 +307,7 @@ p {
     letter-spacing: 0.06em;
 
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 4px;
 }
 
 .project-type {
@@ -293,7 +316,7 @@ p {
     letter-spacing: 0.03em;
 
     margin-top: 0;
-    margin-bottom: 0;
+    padding-bottom: 0;
 
     color: var(--secondary-text-color);
 }
