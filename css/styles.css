@@ -28,7 +28,7 @@ body {
     width: 1200px;
 
 
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
 }
 
 .list {
@@ -36,7 +36,6 @@ body {
     margin-top: 0;
     margin-bottom: 0;
 }
-
 
 h1,
 h2,
@@ -53,9 +52,20 @@ p {
 /* Верхняя линия */
 
 header {
-    padding-bottom: 32px;
 
     border-bottom: 1px solid var(--secondary-text-color);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+
+    padding: 25px 0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -74,6 +84,17 @@ header {
 }
 
 .pages {
+    display: flex;
+    align-items: center;
+
+    margin-left: 93px;
+}
+
+.pages .page+.page {
+    margin-left: 50px;
+}
+
+.nav-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -89,6 +110,17 @@ header {
 }
 
 .contacts {
+    display: flex;
+    align-items: center;
+
+    margin-left: auto;
+}
+
+.contacts .contact+.contact {
+    margin-left: 50px;
+}
+
+.contact-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -334,7 +366,7 @@ header {
 /* Подвал */
 
 footer {
-    padding-top: 60px;
+    padding: 60px 0;
     background-color: #2F303A;
 }
 
